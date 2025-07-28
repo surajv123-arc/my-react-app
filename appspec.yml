@@ -6,6 +6,7 @@ files:
 
 hooks:
 
+
   AfterInstall:
     - location: scripts/build_react.sh
       timeout: 300
