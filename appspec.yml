@@ -5,14 +5,13 @@ files:
     destination: /home/ubuntu/react-app
 
 hooks:
-  BeforeInstall:
-    - location: scripts/install_dependencies.sh
-      timeout: 300
-      runas: root
+  # BeforeInstall hook removed since you want to install manually
+
   AfterInstall:
     - location: scripts/build_react.sh
       timeout: 300
       runas: ubuntu
+
   ApplicationStart:
     - location: scripts/start_nginx.sh
       timeout: 60
