@@ -5,7 +5,6 @@ files:
     destination: /home/ubuntu/react-app
 
 hooks:
-  # BeforeInstall hook removed since you want to install manually
 
   AfterInstall:
     - location: scripts/build_react.sh
