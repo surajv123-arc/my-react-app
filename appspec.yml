@@ -10,7 +10,7 @@ hooks:
   AfterInstall:
     - location: scripts/build_react.sh
       timeout: 300
-      runas: ubuntu
+      runas: root
 
   ApplicationStart:
     - location: scripts/start_nginx.sh
